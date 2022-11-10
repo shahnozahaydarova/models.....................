@@ -6,49 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avtomobil</title>
     <style>
+        body{
+            background-color: blue; 
+        }
         header{
-            background-color: blue;
-            width: 1700px;
-            height: 850px;
-            margin: auto;
+            text-align: center;
         }
         h1{
             text-align: center;
             font-size: 35px;
+            
         }
         p{
-            font-size: 30px;
+            font-size: 50px;
+           
         }
-        div{
-            display: flex;
-            flex-direction: row;
-            margin: auto;
+        .img1{
+            position: inline;
+            margin-left: 700px;
+            background-size: cover;
+            animation-name: muzlatgich;
+            animation-duration: 10s;
+            width: 500px;
+            margin-left: 30%;
+            height: 500px;
+            border-radius: 50%;
+            background-image: url(https://goodwell.uz/media/GRF-T575DXL6-600x600.apng)
+
+        }
+        @keyframes muzlatgich {
+            0%{
+                background-image: url(https://olcha.uz/image/original/category/sNtP20jRtgVx18gStoKLRCGWMBiIYiNu580LvJecBAZflYYZQ2TDsM3ob41f.png);
+            }
+            20%{
+                background-image: url(https://olcha.uz/image/600x600/products/KIWoKd6KJyCaJHyxNMWyp4YDRx3HeUjYppkyyyynqSKOsI48qaW83SLzxKQ6.jpg);
+            }
+            40%{
+                background-image: url(https://olcha.uz/image/360x360/products/4raSaaCDx3k9p2ZxrZarN5yBY7wJrdGNxGTAZnVeREAQzuAqol3AfNeSsSsi.jpg);
+            }
+            60%{
+                background-image: url(https://olcha.uz/image/360x360/products/2msy97aWn1sEIgl85ra6xbmVFgy4LUpMAuFLs6S108owQH4REgjLIMCB2HUP.jpg);
+            }
+            80%{
+                background-image: url(https://www.creditasia.uz/upload/iblock/403/kholodilnik-samsung-rt53k6530sl-wt.jpg);
+            }
+            100%{
+                background-image: url(https://olcha.uz/image/360x360/products/kQyCdUpUzgH56BjlrJSStMrzyrT7Z8TP6MvhSPYKFdLotPeIlW4lY7RfbLq4.jpg);
+            } 
+        } 
+        input{
+            position: absolute;
+            width: 500px;
+            height: 100px;
+            border-radius: 50%;
+            font-size: 30px;
+            margin-left: -500px;
+            margin-top: 100px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Maishiy texnikalar olamiga xush kelibsiz.</h1>
-        <div>
-        <p>Muzlatgichlar olami</p>
-        <img src="" alt="Muzlatgich rasmi.">
-        <a href=""><input type="submit" value="Muzlatgichlar olamiga kirish." ></a>
-        </div>
-        <div>
+        <p display: inline>Muzlatgichlar olami</p>
+        <a href="https://olcha.uz/oz/category/tekhnika-dlya-kukhni/krupnaya-kukhonnaya-tekhnika/kholodilniki-i-morozilnye-kamery-1"><input type="submit" value="Muzlatgichlar olamiga kirish." ></a>
+        <div class="img1" ><img src="" alt=""></div>
         <p>Konditsionerlar olami</p>
         <img src="" alt="Konditsioner rasmi.">
         <a href=""><input type="submit" value="Konditsionerlar olamiga kirish."></a>
-        </div>
-        <div>
         <p>Gaz plitalar olami</p>
         <img src="" alt="gaz plita rasmi.">
         <a href=""><input type="submit" value="Gaz plitalar olamiga kirish."></a>
-        </div>
-        <div>
         <p>Changyutgichlar olami</p>
         <img src="" alt="Changyutgichlar rasmi.">
         <a href=""><input type="submit" value="Changyutgichlar olamiga kirish."></a>
-        </div>
     </header>
 </body>
 </html>
